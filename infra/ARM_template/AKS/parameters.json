@@ -1,0 +1,69 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "resourceName": {
+            "value": "omadacluster"
+        },
+        "location": {
+            "value": "northeurope"
+        },
+        "dnsPrefix": {
+            "value": "aks"
+        },
+        "kubernetesVersion": {
+            "value": "1.18.10"
+        },
+        "networkPlugin": {
+            "value": "azure"
+        },
+        "enableRBAC": {
+            "value": true
+        },
+        "servicePrincipalClientId": {
+            "value": null
+        },
+        "servicePrincipalClientSecret": {
+            "value": null
+        },
+        "enablePrivateCluster": {
+            "value": false
+        },
+        "aadSessionKey": {
+            "value": null
+        },
+        "enableHttpApplicationRouting": {
+            "value": false
+        },
+        "enableAzurePolicy": {
+            "value": false
+        },
+        "vmssNodePool": {
+            "value": true
+        },
+        "vnetSubnetID": {
+            "value": "/subscriptions/328e0db2-17e2-4496-a5f4-6f629cd54217/resourceGroups/omada_example_apps/providers/Microsoft.Network/virtualNetworks/omada_example_apps-vnet/subnets/default"
+        },
+        "serviceCidr": {
+            "value": "10.0.0.0/16"
+        },
+        "dnsServiceIP": {
+            "value": "10.0.0.10"
+        },
+        "dockerBridgeCidr": {
+            "value": "172.17.0.1/16"
+        },
+        "principalId": {
+            "value": "9ba9603f-d445-4763-ace8-e250b4848947"
+        },
+        "workspaceName": {
+            "value": "DefaultWorkspace-328e0db2-17e2-4496-a5f4-6f629cd54217-NEU"
+        },
+        "omsWorkspaceId": {
+            "value": "/subscriptions/328e0db2-17e2-4496-a5f4-6f629cd54217/resourceGroups/DefaultResourceGroup-NEU/providers/Microsoft.OperationalInsights/workspaces/DefaultWorkspace-328e0db2-17e2-4496-a5f4-6f629cd54217-NEU"
+        },
+        "workspaceRegion": {
+            "value": "northeurope"
+        }
+    }
+}
